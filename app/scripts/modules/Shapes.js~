@@ -1,0 +1,19 @@
+(function(global) {
+  'use strict';
+  global.Shapes = {
+    VERSION:'0.0.1'
+  };
+
+  function createShape(){
+   	return Object.create(Object.prototpe, {
+		id: {
+			get: function() {
+				return this._id || 0;
+			},
+			set: function(id) {
+				
+			}
+		}
+	}
+  };
+}(this));
